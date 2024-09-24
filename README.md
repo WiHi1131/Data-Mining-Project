@@ -1,3 +1,4 @@
+# Data Mining Project
 
 ## Welcome to the website/repository for Group 23's semester project for Data Mining CSCI 5502, Fall 2024. 
 
