@@ -1,6 +1,8 @@
 Team Members: 
 
-# William Hinkley
+# William Hinkley 
+<img src = "images/will_profile_pic.jpg" alt = "Will Photo">
+
 ## Bio: 
 - William has a background in both Ecology/Evolutionary Biology and Applied Computer Science from the University of Colorado, Boulder. He was born and raised in Littleton, CO. He enjoys hiking, boxing, and gaming in his free time.
 - 
