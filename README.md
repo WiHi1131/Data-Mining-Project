@@ -1,6 +1,6 @@
-Welcome to the website/repository for Group 23's semester project for Data Mining CSCI 5502, Fall 2024. 
+# Welcome to the website/repository for Group 23's semester project for Data Mining CSCI 5502, Fall 2024. 
 
-You can find links to the relevant pages of our website and brief descriptions below: 
+## You can find links to the relevant pages of our website and brief descriptions below: 
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/Introduction">Introduction to our Project Topic</a>
 
