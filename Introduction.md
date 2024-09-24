@@ -1,5 +1,6 @@
 
 **Nature of the topic**: 
+
 Winning in the stock market has traditionally relied on methods that use mathematical models and expensive computer simulations. Data science offers a fresh perspective, with applications including market trend forecasting, customer segmentation, fraud detection, risk analysis, predictive analytics, and sentiment analysis. In this project, we will use data science to help investors find small businesses with high growth potential. With our help, investors will not need to be a market analyst or own a supercomputer to win in the market. We will follow a multi-step approach. First, we will choose a business and research its internal finances, such as its revenue, debt-to-equity ratio (D/E), and free cash flow (FCF). Second, we will evaluate its worth using key metrics, including its price-to-earnings ratio (P/E), price-to-book ratio (P/B), market cap, and growth trends. Finally, we will use a multitude of sources such as news articles and economic reports to perform sentiment analysis on its customers. After analyzing each aspect of the business, we will isolate the most relevant  factors to investors. Then, we will create a program that generates a profile with an investment score for a given business. Our product will allow prospective investors to input a list of publicly traded small businesses and easily decide which are good investments.
 
-
+<a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
