@@ -39,27 +39,27 @@ The end goal of this project will be to create a versatile investment recommenda
 
 # Potential Datasets 
 
-- <a href = "https://www.kaggle.com/datasets/preetviradiya/algorithmic-trading-dataset"></a>
-- <a href = "https://www.kaggle.com/datasets/cnic92/200-financial-indicators-of-us-stocks-20142018"></a>
-- <a href = "https://www.kaggle.com/datasets/programmerrdai/nvidia-stock-historical-data"></a>
-- <a href = "https://www.kaggle.com/datasets/alirezajavid1999/google-stock-2010-2023"></a>
-- <a href = "https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis"></a>
+- <a href = "https://www.kaggle.com/datasets/preetviradiya/algorithmic-trading-dataset">https://www.kaggle.com/datasets/preetviradiya/algorithmic-trading-dataset</a>
+- <a href = "https://www.kaggle.com/datasets/cnic92/200-financial-indicators-of-us-stocks-20142018">https://www.kaggle.com/datasets/cnic92/200-financial-indicators-of-us-stocks-20142018</a>
+- <a href = "https://www.kaggle.com/datasets/programmerrdai/nvidia-stock-historical-data">https://www.kaggle.com/datasets/programmerrdai/nvidia-stock-historical-data</a>
+- <a href = "https://www.kaggle.com/datasets/alirezajavid1999/google-stock-2010-2023">https://www.kaggle.com/datasets/alirezajavid1999/google-stock-2010-2023</a>
+- <a href = "https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis">https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis</a>
 
 
 # Citations 
 
 - An introduction to machine learning research related to quantitative trading. (n.d.). QuantPedia. 
-<a href = "https://quantpedia.com/an-introduction-to-machine-learning-research-related-to-quantitative-trading/"></a>
+<a href = "https://quantpedia.com/an-introduction-to-machine-learning-research-related-to-quantitative-trading/">https://quantpedia.com/an-introduction-to-machine-learning-research-related-to-quantitative-trading/</a>
 
 - Briere, Marie and Huynh, Karen and Laudy, Olav and Pouget, Sebastien, What do we Learn from a Machine Understanding News Content? Stock Market Reaction to News (October 19, 2022). Available at SSRN: 
-<a href = "https://ssrn.com/abstract=4252745 or http://dx.doi.org/10.2139/ssrn.4252745"></a>
+<a href = "https://ssrn.com/abstract=4252745 or http://dx.doi.org/10.2139/ssrn.4252745">https://ssrn.com/abstract=4252745 or http://dx.doi.org/10.2139/ssrn.4252745</a>
 
-- Dangl, Thomas and Salbrechter, Stefan, Overnight Reversal and the Asymmetric Reaction to News (December 20, 2022). Available at SSRN: <a href = "https://ssrn.com/abstract=4307675"></a> or <a href = "http://dx.doi.org/10.2139/ssrn.4307675"></a>
+- Dangl, Thomas and Salbrechter, Stefan, Overnight Reversal and the Asymmetric Reaction to News (December 20, 2022). Available at SSRN: <a href = "https://ssrn.com/abstract=4307675">https://ssrn.com/abstract=4307675</a> or <a href = "http://dx.doi.org/10.2139/ssrn.4307675">http://dx.doi.org/10.2139/ssrn.4307675</a>
 
-- Hagen, D. (2022, December 2). Why it is hard to invest. MeaningfulMoney. <a href = "https://www.meaningfulmoney.life/post/investing-is-hard"></a>
+- Hagen, D. (2022, December 2). Why it is hard to invest. MeaningfulMoney. <a href = "https://www.meaningfulmoney.life/post/investing-is-hard">https://www.meaningfulmoney.life/post/investing-is-hard</a>
 
-- Sussman, A. (n.d.). New estimates of the stock market wealth effect. NBER. <a href = "https://www.nber.org/digest/aug19/new-estimates-stock-market-wealth-effect"></a>
+- Sussman, A. (n.d.). New estimates of the stock market wealth effect. NBER. <a href = "https://www.nber.org/digest/aug19/new-estimates-stock-market-wealth-effect">https://www.nber.org/digest/aug19/new-estimates-stock-market-wealth-effect</a>
 
-- How Machine Learning is Transforming the Investment Process. (n.d.). CFA Institute. <a href = "https://www.cfainstitute.org/en/professional-insights-stories/how-machine-learning-is-transforming-the-investment-process"></a>
+- How Machine Learning is Transforming the Investment Process. (n.d.). CFA Institute. <a href = "https://www.cfainstitute.org/en/professional-insights-stories/how-machine-learning-is-transforming-the-investment-process">https://www.cfainstitute.org/en/professional-insights-stories/how-machine-learning-is-transforming-the-investment-process</a>
   
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
