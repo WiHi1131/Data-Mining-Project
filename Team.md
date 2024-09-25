@@ -10,7 +10,7 @@ Team Members:
 
 # Michael V.
 <img src="images/michael_profile_pic.jpg" alt="Michael Photo" 
-style="width:200px;height:200px;">
+style="width:200px;height:300px;">
 
 ## Bio:
 - Michael has a B.S. in Computer Science from UCLA. He is currently studying Data Science at CU Boulder. Coming from Colorado, he loves taking trips to the mountains, biking, and photography.
