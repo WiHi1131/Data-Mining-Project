@@ -11,7 +11,7 @@ Team Members:
 # Michael V. 
 
 # Melina K. 
-<img src = "images/IMG_3139.JPG" alt = "Melina Photo" style="width:200px;height:400px;">
+<img src = "images/IMG_3139.JPG" alt = "Melina Photo" style="width:200px;height:300px;">
 
 ## Bio: 
 - Melina got her undergraduate degree in Biophysics from Texas Christian University and is currently pursuing her Master's in Data Science at the University of Colorado Boulder. Originally from Wisconsin, she enjoys running, water sports, and trying out new restaurants with friends.
