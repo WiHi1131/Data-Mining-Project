@@ -11,5 +11,9 @@ Team Members:
 # Michael V. 
 
 # Melina K. 
+<img src = "images/will_profile_pic.jpg" alt = "Will Photo" style="width:200px;height:200px;">
+
+##Bio: 
+- Melina got her undergraduate degree in Biophysics from Texas Christian University and is currently pursuing her Master's in Data Science at the University of Colorado Boulder. Originally from Wisconsin, she enjoys running, water sports, and finding new restaurants with friends. 
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
