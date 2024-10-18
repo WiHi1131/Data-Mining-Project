@@ -10,11 +10,11 @@ The financial and profile data used was gathered via web-scraping and by pulling
 <main>
     <div class="image-container">
         <figure>
-            <figcaption>This graph illustrates the maximum amount of funding an individual company recieved in each country. This will               be vital to our analysis because we can predict if a company will recieve more funding based on the country they founded                their company in.</figcaption>
+            <figcaption>1. This graph illustrates the maximum amount of funding an individual company recieved in each country. This will               be vital to our analysis because we can predict if a company will recieve more funding based on the country they founded                their company in.</figcaption>
              <img src = "visualizations/melbarh.png" style="width:600px;height:800px;">
         </figure>
         <figure>
-            <figcaption>This pie chart illustrates the last funding type an individual company recieved. This information will be                    important to our analysis because we can predict the success of a company based on the type of funding that they recieved.             </figcaption>
+            <figcaption>2. This pie chart illustrates the last funding type an individual company recieved. This information will be                    important to our analysis because we can predict the success of a company based on the type of funding that they recieved.             </figcaption>
             <img src = "visualizations/melpiechart.png" style="width:800px;height:600px;">
         </figure>
     </div>
