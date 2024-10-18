@@ -1,6 +1,7 @@
 The financial and profile data used was gathered via web-scraping and by pulling API's from various sources. Initially, the data was separated so the financial data could be preprocessed. "Not a Number", or NaN, values were spread through various columns including: investor_count, funding_count, funding_total, funding_last, funding_last_date, valuation, valuation_date, revenue_year, and revenue_total. The length of the dataset totaled almost 7000, so columns that contained less than 20% NaN values, we replaced with the median of the column. We decided to replace these values with the median rather than the mean because the distribution of each column was positively skewed. Indicating that each distribution contained outliers, and therefore, the mean wouldn't be a good measure of the midpoint of the data. A further in-depth explanation of the cleaning process can be found in the cleaning.ipynb folder. 
 
 
-<img src = "visualizations/melbarh.png" alt = "This graph illustrates the maximum amount of funding an individual company recieved in each country.\n This will be vital to our analysis because we can predict if a company will recieve more funding based on the country they founded their company in." style="width:200px;height:300px;">
+<img src = "visualizations/melbarh.png" style="width:200px;height:300px;">
+This graph illustrates the maximum amount of funding an individual company recieved in each country.\n This will be vital to our analysis because we can predict if a company will recieve more funding based on the country they founded their company in.
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
