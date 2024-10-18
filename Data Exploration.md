@@ -8,15 +8,13 @@ The financial and profile data used was gathered via web-scraping and by pulling
     </header>
 
 <main>
-    <div class="image-container">
-        <figure>
-            <figcaption>1. This graph illustrates the maximum amount of funding an individual company recieved in each country. This will               be vital to our analysis because we can predict if a company will recieve more funding based on the country they founded                their company in.</figcaption>
-             <img src = "visualizations/melbarh.png" style="width:600px;height:800px;">
-        </figure>
-        <figure>
-            <figcaption>2. This pie chart illustrates the last funding type an individual company recieved. This information will be                    important to our analysis because we can predict the success of a company based on the type of funding that they recieved.             </figcaption>
-            <img src = "visualizations/melpiechart.png" style="width:800px;height:600px;">
-        </figure>
-    </div>
+<div class="image-container">
+<p>1. This graph illustrates the maximum amount of funding an individual company received in each country. This will               be vital to our analysis because we can predict if a company will receive more funding based on the country they founded                their company in.</figcaption>
+</p>
+<img src = "visualizations/melbarh.png" style="width:600px;height:800px;">
+
+<p>2. This pie chart illustrates the last funding type an individual company received. This information will be                    important to our analysis because we can predict the success of a company based on the type of funding that they received.             </p>
+<img src = "visualizations/melpiechart.png" style="width:800px;height:600px;">
+</div>
 </main>
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
