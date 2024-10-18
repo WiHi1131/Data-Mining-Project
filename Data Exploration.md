@@ -9,7 +9,7 @@ The financial and profile data used was gathered via web-scraping and by pulling
 
 <main>
 <div class="image-container">
-<p>1. This graph illustrates the maximum amount of funding an individual company received in each country. This will               be vital to our analysis because we can predict if a company will receive more funding based on the country they founded                their company in.</figcaption>
+<p>1. This graph illustrates the maximum amount of funding an individual company received in each country. This will               be vital to our analysis because we can predict if a company will receive more funding based on the country they founded                their company in.
 </p>
 <img src = "visualizations/melbarh.png" style="width:600px;height:800px;">
 
