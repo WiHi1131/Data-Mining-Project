@@ -36,16 +36,16 @@ After scraping and cleaning, we had three datasets. While scraping each website,
         <h1>Snippet of Data Before Computations: </h1>
     </header>
 <div class="image-container">
-<img src = "visualizations/financials.png" style="width:900px;height:600px;">
-<img src = "visualizations/profiles.png" style="width:900px;height:600px;">
-<img src = "visualizations/overviews.png" style="width:900px;height:600px;">
+<img src = "visualizations/financials.png" style="width:1100px;height:600px;">
+<img src = "visualizations/profiles.png" style="width:1100px;height:600px;">
+<img src = "visualizations/overviews.png" style="width:1100px;height:600px;">
 
 <header>
         <h1>Snippet of Data After Computations: </h1>
     </header>
-<img src = "visualizations/primary.png" style="width:900px;height:600px;">
-<img src = "visualizations/primary-with-valuation.png" style="width:900px;height:600px;">
-<img src = "visualizations/primary-with-revenue.png" style="width:900px;height:600px;">
+<img src = "visualizations/primary.png" style="width:1100px;height:600px;">
+<img src = "visualizations/primary-with-valuation.png" style="width:1100px;height:600px;">
+<img src = "visualizations/primary-with-revenue.png" style="width:1100px;height:600px;">
 
 <header>
         <h1>Data Visualizations</h1>
