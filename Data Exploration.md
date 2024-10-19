@@ -9,11 +9,23 @@ The financial and profile data used was gathered via web-scraping and by pulling
 
 <main>
 <div class="image-container">
+<header>
+<h2>Maximum Funding per Country</h2>
+</header>
 <p>1. This graph illustrates the maximum amount of funding an individual company received in each country. This will               be vital to our analysis because we can predict if a company will receive more funding based on the country they founded                their company in.
 </p>
 <img src = "visualizations/melbarh.png" style="width:600px;height:800px;">
 
+<header>
+<h2>Last Funding Type</h2>
+</header>
 <p>2. This pie chart illustrates the last funding type an individual company received. This information will be                    important to our analysis because we can predict the success of a company based on the type of funding that they received.             </p>
+<img src = "visualizations/melpiechart.png" style="width:800px;height:600px;">
+
+<header>
+<h2>Box Plots</h2>
+</header>
+<p>The boxplot shows a median of 10 investors, with the middle 50% of the data lying fairly close to the median, a low whisker of 1 and a high whisker a bit higer than 25. The data appears somewhat symmetrically spread with a bit of a right skew towards higher numbers of investors, and a significant number of high outliers.</p>
 <img src = "visualizations/melpiechart.png" style="width:800px;height:600px;">
 </div>
 </main>
