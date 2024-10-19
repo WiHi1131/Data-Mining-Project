@@ -19,7 +19,13 @@ In the end after scraping, cleaning, and integrating the data from these website
 <header>
         <h1>Data Cleaning</h1>
     </header>
-The financial and profile data used was gathered via web-scraping and by pulling API's from various sources. Initially, the data was separated so the financial data could be preprocessed. "Not a Number", or NaN, values were spread through various columns including: investor_count, funding_count, funding_total, funding_last, funding_last_date, valuation, valuation_date, revenue_year, and revenue_total. The length of the dataset totaled almost 7000, so columns that contained less than 20% NaN values, we replaced with the median of the column. We decided to replace these values with the median rather than the mean because the distribution of each column was positively skewed. Indicating that each distribution contained outliers, and therefore, the mean wouldn't be a good measure of the midpoint of the data. A further in-depth explanation of the cleaning process can be found in the cleaning.ipynb folder. 
+Three datasets: financial, profile, and overview were gathered via webscraping. Cleaning the datasets was a two-step process. First, we imputed and dropped missing values, then we converted each initial data type to its appropriate type.  
+
+For imputation, we started by viewing how many null values each column had. If the column was a numerical type and the null values made up less than 25% of the total rows, we would impute the missing values. Since our datasets had between 5000-7000 rows each, many values could be missing from a column, and its values could still be imputed. To decide what imputation value to use, we would plot the distribution of the column and if it was moderately-to-strongly skewed, we would use median to remove the influence of outliers and skewness. If it was not skewed, we would use mean or mode. In most cases the distributions were skewed.  
+
+For type conversion, we started by viewing the types of each column, then focused on converting objects to more narrow types. For example, categorical types such as funding type were converted into categories to improve space efficiency. Integer types such as investor count were changed to Int64 types from float64 types. With date and time information, we uniformly formatted these columns for ease of use. For example, any dates were stored as objects. We converted these to datetime types, and then stored them as formatted strings (which are still stored as objects but now properly formatted).  
+
+A step-by-step explanation of the cleaning process can be found in cleaning.ipynb under the cleaning/ directory in our repository: https://github.com/WiHi1131/Data-Mining-Project/. 
 
 <header>
         <h1>Data Visualizations</h1>
