@@ -87,7 +87,7 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 </header>
 <p>This graph illustrates the maximum amount of funding an individual company receives in each country. This will be vital to our analysis because we can predict if a company will receive more funding based on the country, they founded their company in. 
 </p>
-<img src = "visualizations/melbarh.png" style="width: 55vw; min-width: 330px;">
+<img src = "visualizations/melbarh-fixed.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>5. Most recent funding type</h2>
