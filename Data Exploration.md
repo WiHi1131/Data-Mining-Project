@@ -45,13 +45,13 @@ After scraping and cleaning, we had three datasets. While scraping each website,
         <h1>After Cleaning and Integration: </h1>
     </header>
 <p>primary.csv</p>
-<img src = "visualizations/primary.png" style="width:1100px;height:400px;">
+<img src = "visualizations/primary.png" style="width: 55vw; min-width: 330px;">
 
 <p>primary-with-revenue.csv</p>
-<img src = "visualizations/primary-with-revenue.png" style="width:1100px;height:400px;">
+<img src = "visualizations/primary-with-revenue.png" style="width: 55vw; min-width: 330px;">
 
 <p>primary-with-valuation.csv</p>
-<img src = "visualizations/primary-with-valuation.png" style="width:1100px;height:400px;">
+<img src = "visualizations/primary-with-valuation.png" style="width: 55vw; min-width: 330px;">
 
 
 
@@ -66,35 +66,35 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 </header>
 <p>The mosaic score for a company is an internal metric designed by CB Insights for evaluating the long-term success of startups. Without a paid account, only the mosaic score change was available to scrape for each startup. This plot puts startups into bins based on their most recent funding date, then creates a violin plot for each bin to show the distribution of its mosaic score changes. From this plot, we can see that startups that have recently received funding tend to have more positive mosaic score changes. This intuitively makes sense: if a startup has not been funded for a long time, it is less likely to be a long-term success.  
 </p>
-<img src = "visualizations/michael-violinplot.png" style="width:900px;height:600px;">
+<img src = "visualizations/michael-violinplot.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>2. Number of startups by country </h2>
 </header>
 <p>We have the country information for each of our startups, so we can plot a map showing how many startups are in each country in our dataset. From this plot, we get an idea of where the startups we are analyzing are located, and we can also decide if there are countries we want to drop or countries we want to gather more data for.  
 </p>
-<img src = "visualizations/michael-map-plot.png" style="width:1000px;height:600px;">
+<img src = "visualizations/michael-map-plot.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>3. Most common words in startup descriptions  </h2>
 </header>
 <p>Each of the startups in our dataset has a description written by CB Insights. Using these descriptions, we can extract the most common words and create a frequency plot. Some of the descriptions contain city names, so we are getting common city names and removing them from the descriptions before processing the words. We are also moving stopping words like 'the', 'and', and 'but'. From this frequency plot, we can get an idea of what types of companies we are looking at, and what the most popular areas are.  
 </p>
-<img src = "visualizations/michael-word-freq.png" style="width:800px;height:1000px;">
+<img src = "visualizations/michael-word-freq.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>4. Maximum funding awarded to a company in every country</h2>
 </header>
 <p>This graph illustrates the maximum amount of funding an individual company receives in each country. This will be vital to our analysis because we can predict if a company will receive more funding based on the country, they founded their company in. 
 </p>
-<img src = "visualizations/melbarh.png" style="width:600px;height:800px;">
+<img src = "visualizations/melbarh.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>5. Most recent funding type</h2>
 </header>
 <p>This pie chart illustrates the last funding type an individual company received. This information will be important for our analysis because we can predict the success of a company based on the type of funding that they receive. 
 </p>
-<img src = "visualizations/melpiechart.png" style="width:800px;height:600px;">
+<img src = "visualizations/melpiechart.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>6. Box plots</h2>
@@ -105,31 +105,31 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 <h3>Investor Count: </h3>
 <p>This boxplot shows a median of 10 investors, with the middle 50% of the data lying close to the median, a low whisker of 1 and a high whisker a bit higer than 25. The data appears somewhat symmetrically spread with a bit of a right skew towards higher numbers of investors, and a significant number of high outliers.
 </p>
-<img src = "visualizations/willboxplotinvestor.png" style="width:700px;height:600px;">
+<img src = "visualizations/willboxplotinvestor.png" style="width: 55vw; min-width: 330px;">
 
 <h3>Mosaic Change: </h3>
 <p>This boxplot shows a smaller negative mean, and a very symmetrical looking spread, with a very small right skew. There are a significant amount of both high and low outliers. 
 </p>
-<img src = "visualizations/willboxplotmosaicchange.png" style="width:700px;height:600px;">
+<img src = "visualizations/willboxplotmosaicchange.png" style="width: 55vw; min-width: 330px;">
 
 <h3>Funding Count: </h3>
 <p>This boxplot shows a heavy right skew, but a symmetrical middle 50% of the data, with a median of 5 (close to the mean) of the number of rounds of funding. There are high outliers but less outliers than in previous boxplots. 
 </p>
-<img src = "visualizations/willboxplotfundingcount.png" style="width:700px;height:600px;">
+<img src = "visualizations/willboxplotfundingcount.png" style="width: 55vw; min-width: 330px;">
 
 <h3>Funding Total: </h3>
 <p>This boxplot is undiscernible because of the significant high outliers. Removal of the top 50 outliers was conducted and the data replotted: 
 </p>
-<img src = "visualizations/willboxplotfundingtotal.png" style="width:700px;height:600px;">
+<img src = "visualizations/willboxplotfundingtotal.png" style="width: 55vw; min-width: 330px;">
 
 <p>This boxplot is now discernible due to removing outliers. We see a very small median with a heavy right skew, and still a significant number of very high outliers. The lowest whisker is close to 0 and not below. 
 </p>
-<img src = "visualizations/willboxplotfundingtotalnoout.png" style="width:700px;height:600px;">
+<img src = "visualizations/willboxplotfundingtotalnoout.png" style="width: 55vw; min-width: 330px;">
 
 <h3>Sentiment Score: </h3>
 <p>After sentiment scores were extracted, summary statistics were generated and this boxplot was created. We see a very high mean of around 92, indicating that most sentiment scores are very high. This is likely due to bias in selecting startups that were able to gain high amounts of funding (with a mean of 114 million USD). This boxplot shows most of the data being very close to 100. There is a strong left skew to this data and plentiful low outliers. 
 </p>
-<img src = "visualizations/willboxplotsentimentscore.png" style="width:700px;height:600px;">
+<img src = "visualizations/willboxplotsentimentscore.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>7. Histograms</h2>
@@ -140,27 +140,27 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 <h3>Investor Count: </h3>
 <p>This histogram looks mostly normally distributed around the mean/median, with a long right-handed tail.   
 </p>
-<img src = "visualizations/willhistinvestorcount.png" style="width:900px;height:600px;">
+<img src = "visualizations/willhistinvestorcount.png" style="width: 55vw; min-width: 330px;">
 
 <h3>Mosaic Change: </h3>
 <p>This histogram appears symmetrical and has a very large peak around the mean – there is a slight but noticeable right skew.   
 </p>
-<img src = "visualizations/willhistmosaicchange.png" style="width:900px;height:600px;">
+<img src = "visualizations/willhistmosaicchange.png" style="width: 55vw; min-width: 330px;">
 
 <h3>Funding Total: </h3>
 <p>This histogram is heavily right skewed. Most of the data is located close to 0. We know the mean is above 100, but this is likely heavily influenced by outliers, making the median a more robust measurement at 31 million. 
 </p>
-<img src = "visualizations/willhistfundingtotal.png" style="width:900px;height:600px;">
+<img src = "visualizations/willhistfundingtotal.png" style="width: 55vw; min-width: 330px;">
 
 <h3>Funding Count: </h3>
 <p>This histogram looks slightly normal, being unimodal, but also containing a long right-tail.  
 </p>
-<img src = "visualizations/willhistfundingcount.png" style="width:900px;height:600px;">
+<img src = "visualizations/willhistfundingcount.png" style="width: 55vw; min-width: 330px;">
 
 <h3>Sentiment Score: </h3>
 <p>This histogram shows that most sentiment scores are 100, with a very long left-handed tail. The mean is close to the median even with so many outliers, indicating how many values are directly at 100. It may be worth further investigation to find out how sentiment score is determined and if it has much meaning to our analysis.  
 </p>
-<img src = "visualizations/willhistsentimentscore.png" style="width:900px;height:600px;">
+<img src = "visualizations/willhistsentimentscore.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>8. Q-Q-plots</h2>
@@ -168,23 +168,23 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 
 <p>QQ-plots were created for each relevant numerical variable to visually determine how normally distributed they were. We can visually measure how close the distribution of each numerical variable is to the theoretical Normal distribution by how closely they approximate the straight red line in each plot. Each variable shows a marked difference between its distribution and a normal distribution. The Mosaic score is the most normally distributed variable, as it is the closest to the straight line. Both Funding Total and Sentiment Score show the most significant deviations, as we have seen already in above plots - both of these variables had peaks at one end of their value ranges or the other. Investor Count and Funding Count showed distributions in between these two aforementioned plots, not being completely normally distributed by any means, but closer than Funding Total and/or Sentiment Score. The deviation from a Gaussian distribution for each variable indicates that normalization may be worthwhile for all numerical variables.  
 </p>
-<img src = "visualizations/willqqinvestorcount.png" style="width:700px;height:600px;">
+<img src = "visualizations/willqqinvestorcount.png" style="width: 55vw; min-width: 330px;">
 
 <p>
 </p>
-<img src = "visualizations/willqqmosaicchange.png" style="width:700px;height:600px;">
+<img src = "visualizations/willqqmosaicchange.png" style="width: 55vw; min-width: 330px;">
 
 <p>
 </p>
-<img src = "visualizations/willqqfundingtotal.png" style="width:700px;height:600px;">
+<img src = "visualizations/willqqfundingtotal.png" style="width: 55vw; min-width: 330px;">
 
 <p>
 </p>
-<img src = "visualizations/willqqfundingcount.png" style="width:700px;height:600px;">
+<img src = "visualizations/willqqfundingcount.png" style="width: 55vw; min-width: 330px;">
 
 <p>
 </p>
-<img src = "visualizations/willqqsentimentscore.png" style="width:700px;height:600px;">
+<img src = "visualizations/willqqsentimentscore.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>9. Keywords vs sentiment score</h2>
@@ -192,7 +192,7 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 
 <p>To understand more about how keywords may have influenced sentiment analysis, we created a separate dataframe that aggregated the average sentiment value score for each industry keyword present in the dataset. We iteratively updated the average sentiment score for each keyword as it was encountered in the dataset, and also counted the instances of each keyword present. This graph shows the average sentiment score for each industry keyword and the number of each keyword present in the dataset. We do not see hardly any variation here. This is likely a good indication that our dataset is fairly biased, either in the way that sentiment scores are calculated, or in the fact that every startup in the dataset is very successful, having been able to secure 114 million dollars of funding on average, so it is likely that these industry buzzwords associated with the industry of each startup all are attached to very positive sentiments.
 </p>
-<img src = "visualizations/willkeywordssentimentscore.png" style="width:1000px;height:600px;">
+<img src = "visualizations/willkeywordssentimentscore.png" style="width: 55vw; min-width: 330px;">
 
 <header>
 <h2>10. Pairplot</h2>
@@ -200,7 +200,7 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 
 <p>We can see some potentially positive relationships, especially between the funding count and the investor count. This intuitively makes sense, as you would expect more rounds of funding as the number of investors increased. Overall, though, the data looks very scattered with very little indication of linearity between any of the numerical variables. We would perhaps expect that more investors and more total funding, for example, would have a stronger positive relationship. We see this somewhat, but it does not appear to be a very strong linear relationship. This does not bode well for future model-building. Let's look at a heatmap showing correlation coefficients between each numerical variable: 
 </p>
-<img src = "visualizations/willpairplot.png" style="width:900px;height:900px;">
+<img src = "visualizations/willpairplot.png" style="width: 55vw; min-width: 330px;">
 
 <p>We can see some potentially positive relationships, especially between the funding count and the investor count. This intuitively makes sense, as you would expect more rounds of funding as the number of investors increased. Overall, though, the data looks very scattered with very little indication of linearity between any of the numerical variables. We would perhaps expect that more investors and more total funding, for example, would have a stronger positive relationship. We see this somewhat, but it does not appear to be a very strong linear relationship. This does not bode well for future model-building. Let's look at a heatmap showing correlation coefficients between each numerical variable. 
 </p>
@@ -211,7 +211,7 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 
 <p>This heatmap shows color-coded correlation coefficients between each numerical variable, with a stronger correlation being the reddest, and the weakest being the bluest. We immediately notice how most of the heatmap is very blue, with almost no correlation between most variables (with extremely small coefficients, a few even being 0). We see a moderate positive correlation between funding count and investor count, and a weak positive correlation between total funding and funding count and total funding and investor count. But most variables appear to be as uncorrelated as possible. Again, this will prove to be a problem for further model-building and analysis, and we may need to explore other sources of data to create effective models. 
 </p>
-<img src = "visualizations/willheatmap.png" style="width:900px;height:900px;">
+<img src = "visualizations/willheatmap.png" style="width: 55vw; min-width: 330px;">
 
 </div>
 </main>
