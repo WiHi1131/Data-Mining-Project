@@ -28,6 +28,11 @@ For type conversion, we started by viewing the types of each column, then focuse
 A step-by-step explanation of the cleaning process can be found in cleaning.ipynb under the cleaning/ directory in our repository: https://github.com/WiHi1131/Data-Mining-Project/. 
 
 <header>
+        <h1>Data Integration</h1>
+    </header>
+After scraping and cleaning, we had three datasets. While scraping each website, we collected the homepage URL of the startup being scraped, so the integration process of the cleaned datasets was straightforward. We performed an inner join on the profile dataset with the financial dataset on the column website. Then, we performed another inner join using the column website on that combined dataset and the overview dataset. In the end, we created a primary dataset called primary.csv under the clean-datasets/ directory. After integrating our cleaned datasets to create a primary dataset, we decided to create two mini-datasets also under clean-datasets/. One contains the startups from primary with complete revenue information, and the other contains startups with complete valuation information. Revenue and valuation data were sparse in the primary dataset but may be useful for model building. Finally, we dropped the revenue and valuation columns from the primary dataset.  
+
+<header>
         <h1>Data Visualizations</h1>
     </header>
 
