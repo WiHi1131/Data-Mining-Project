@@ -332,6 +332,7 @@ With 100 trees, the F1 Score is decent, and with hyperparameter tuning becomes s
 Our random forest model did a good job of deciding whether a company would have low or high valuation based on our modified feature set. Using this model, given an unseen company, we could decide with moderate confidence whether they would end up with a low or high valuation.  
 
 <a href="#sections">Back to top</a>
+
 ___
 
 <div id="section-5"></div>
@@ -365,6 +366,7 @@ Class 0, Class 1, and Class 2 correspond to low, medium, and high valuations. Be
 Our random forest model did an okay job of deciding whether a company would have low, medium, or high valuation. Using this model, given an unseen company, we could decide with some confidence whether they would end up having a low, medium, or high valuation. 
 
 <a href="#sections">Back to top</a>
+
 ___
 
 <div id="section-6"></div>
@@ -414,6 +416,7 @@ We made a plot and used the elbow method to determine the optimal number of clus
 Using SVR and KNN regressors, we were able to predict valuations with quite high accuracy. For the SVR regressor, we had an r-squared value of 0.997, which is very high. For the KNN regressor, we had an r-squared value of 0.755, which is moderately high. 
 
 <a href="#sections">Back to top</a>
+
 ___
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
