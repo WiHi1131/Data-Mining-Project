@@ -1,4 +1,4 @@
-<header>Test</header>
+<h1>Test</h1>
 <p>text test</p>
 
 text test 2
