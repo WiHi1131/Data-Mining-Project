@@ -16,9 +16,19 @@ Overall, the objective of this milestone was to train machine learning models to
 
 ## Jump to a Section
 
-<a href="#section-1">Section 1</a>
+<div id="sections"></div>
 
-<a href="#section-2">Section 2</a>
+> <a href="#section-1">Section 1</a>
+>
+> <a href="#section-2">Section 2</a>
+>
+> <a href="#section-3">Section 3</a>
+>
+> <a href="#section-4">Section 4</a>
+>
+> <a href="#section-5">Section 5</a>
+>
+> <a href="#section-6">Section 6</a>
 
 ___
 
@@ -104,6 +114,8 @@ We can see a huge amount of variability within the large ball of data that was p
 
 Though it may be interesting to use such a clustering in a further analysis beyond the scope of this project, it was decided that it would be sufficient to use K = 3 and attempt to find ways to predict any data found to be in Cluster 0, as this appears to have enough interesting differences (from the examination of the means of attributes for data in that cluster) to make predictive models focusing mostly on finding startups that fit into this cluster. 
 
+<a href="#sections">Back to top</a>
+
 ___
 
 <div id="section-2"></div>
@@ -160,7 +172,11 @@ Surprisingly, we saw an extremely high rate of accuracy of prediction even thoug
 
 Our model performs extremely well without the need for class balancing or adjustment of a very simple neural network. With such an excellent accuracy score, we should be wary of possible overfitting. The best way to uncover overfitting would be to find out how well this model performs on brand-new, unseen data. 
 
+<a href="#sections">Back to top</a>
+
 ___
+
+<div id="section-3"></div>
 
 # Section 3
 
@@ -264,7 +280,11 @@ With hyperparameter tuning, we can achieve an even greater F1 Score for the SVM 
 
 Using a decision tree and support vector machine on our primary dataset to predict which cluster each company belongs to worked well. The tuned decision tree had an F1 Score of 0.941, and the tuned SVM had an F1 Score of 0.930. We also tested the viability of creating models on our datasets and developed a preprocessing pipeline. Finally, we saw firsthand the effect that scaling has on distance-based model accuracy. The next two sections use the companies from our primary dataset that had valuation information. The models created are more applicable for real-world inference, because we drop circular features, such as total funding when trying to make predictions. Instead, we use information that companies without much funding information would have, such as their industry, location, year founded, and latest funding. 
 
+<a href="#sections">Back to top</a>
+
 ___
+
+<div id="section-4"></div>
 
 # Section 4
 
@@ -313,7 +333,10 @@ With 100 trees, the F1 Score is decent, and with hyperparameter tuning becomes s
 
 Our random forest model did a good job of deciding whether a company would have low or high valuation based on our modified feature set. Using this model, given an unseen company, we could decide with moderate confidence whether they would end up with a low or high valuation.  
 
+<a href="#sections">Back to top</a>
 ___
+
+<div id="section-5"></div>
 
 # Section 5
 
@@ -343,7 +366,10 @@ Class 0, Class 1, and Class 2 correspond to low, medium, and high valuations. Be
 
 Our random forest model did an okay job of deciding whether a company would have low, medium, or high valuation. Using this model, given an unseen company, we could decide with some confidence whether they would end up having a low, medium, or high valuation. 
 
+<a href="#sections">Back to top</a>
 ___
+
+<div id="section-6"></div>
 
 # Section 6
 
@@ -389,6 +415,7 @@ We made a plot and used the elbow method to determine the optimal number of clus
 
 Using SVR and KNN regressors, we were able to predict valuations with quite high accuracy. For the SVR regressor, we had an r-squared value of 0.997, which is very high. For the KNN regressor, we had an r-squared value of 0.755, which is moderately high. 
 
+<a href="#sections">Back to top</a>
 ___
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
