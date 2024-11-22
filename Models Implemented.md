@@ -1,3 +1,5 @@
+<div id="sections"></div>
+
 # Overview
 
 This page is organized into six sections. The authors of each section are:
@@ -13,8 +15,6 @@ The sections have different goals, preprocessing steps, and models. Some section
 Overall, the objective of this milestone was to train machine learning models to recognize patterns in our datasets and then validate these models with test data. Using these models, we can make predictions on inference sets containing samples that our models have not seen before. This is powerful because it enables us to predict how successful a company is likely to be based on preliminary data, the results of which can then be used to modify their strategy if needed. All model files are in the `Model Building` folder in the GitHub repository.  
 
 ## Jump to a Section
-
-<div id="sections"></div>
 
 > <a href="#section-1">Section 1</a>
 >
