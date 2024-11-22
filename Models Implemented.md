@@ -21,6 +21,6 @@ _test_
 
 1. test
 
-![Profiles](visualizations/profiles.png)
+![<img src="visualizations/profiles.png" width="150"/>](visualizations/profiles.png)
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
