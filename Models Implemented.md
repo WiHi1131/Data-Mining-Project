@@ -1,4 +1,28 @@
+# Models Implemented
+
+## Overview
+
+This page is organized into six sections. The authors of each section are:
+
+| Name      | Sections          |
+| --------- | ----------------- |
+| Will      | Section 1 & 2     |
+| Michael   | Section 3, 4, & 5 |
+| Melina    | Section 6         |
+
+The sections have different goals, preprocessing steps, and models. Some sections contain multiple models. In total, we created nine models. Each section also discusses our reasoning for the section and finishes off with a conclusion.  
+
+Overall, the objective of this milestone was to train machine learning models to recognize patterns in our datasets and then validate these models with test data. Using these models, we can make predictions on inference sets containing samples that our models have not seen before. This is powerful because it enables us to predict how successful a company is likely to be based on preliminary data, the results of which can then be used to modify their strategy if needed. All model files are in the `Model Building` folder in the GitHub repository.  
+
+## Jump to a Section
+
+<a href="#section-1">Section 1</a>
+
+<a href="#section-2">Section 2</a>
+
 ___
+
+<div id="section-1"></div>
 
 # Section 1
 
@@ -82,6 +106,8 @@ Though it may be interesting to use such a clustering in a further analysis beyo
 
 ___
 
+<div id="section-2"></div>
+
 # Section 2
 
 **File:** `Will_DM_NN.ipynb`
@@ -134,10 +160,236 @@ Surprisingly, we saw an extremely high rate of accuracy of prediction even thoug
 
 Our model performs extremely well without the need for class balancing or adjustment of a very simple neural network. With such an excellent accuracy score, we should be wary of possible overfitting. The best way to uncover overfitting would be to find out how well this model performs on brand-new, unseen data. 
 
+___
 
+# Section 3
 
+**File:** `Michael-ML-Clusters.ipynb`
 
+**Goal**: Predict clusters found with K-Means using classification on `primary.csv`.
 
+**Reason**: Given an unseen sample, we want to be able to predict its cluster based on its features. This section is not necessarily applicable to real world problems, because 1) we could have just added the point to the dataset then used K-Means to predict its cluster, and 2) there would be few unseen samples with all the features used to train our model. Nonetheless, this section helps us test our processing pipeline and model outputs, so we feel it is necessary to showcase.
+
+## Preprocessing
+
+Preprocessing is performed on both the training set and test set. Typically, encodings and scalings are first fit on the training set, then the data in both the training set and test set are transformed. By doing this, we ensure there is no data leakage, and that the test set can be processed by the model.
+
+### 1. Loading:
+
+First, we load the dataset and split it into a feature matrix and a target vector. Then we split those into training and test sets.  
+
+Incomplete snippet of initial training dataset features:
+
+![19](milestone-3-visualizations/19.png)
+
+Initial training dataset target counts:
+
+![20](milestone-3-visualizations/20.png)
+
+### 2. Encoding:
+
+Next, we encode the categorical features, which transforms them into numerical features, which is needed for training certain models. To do this, we look at the cardinality of each categorical feature (number of unique values).  
+
+![21](milestone-3-visualizations/21.png)
+
+We encode the features accordingly. Here are the encodings:
+
+![22](milestone-3-visualizations/22.png)
+
+### 3. Augmenting:
+
+Next, we can optionally augment our feature matrix. However, after training the models, we found that in this case, augmentations did not significantly affect model performance.  
+
+![23](milestone-3-visualizations/23.png)
+
+### 4. Balancing:
+
+Now, we can balance our data such that each class in the target vector is represented by roughly the same number of samples. To do this, we use SMOTE oversampling. Visit [https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/](https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/) for more details.  
+
+![24](milestone-3-visualizations/24.png)
+
+### 5. Scaling:
+
+Finally, we scale our feature columns (all of which are now numerical). To help with this, we created a scale previewer. From a dropdown, we can select a feature and a scaling method, and the previewer will show how the data distributions for both the training and test set look before and after the feature is scaled. For example, `year_founded` can be scaled to be more normal using quantile scaling.
+
+![25](milestone-3-visualizations/25.png)
+
+Another example is that `sentimentScore` can be scaled between 0 and 1 using min-max scaling. 
+
+![26](milestone-3-visualizations/26.png)
+
+After we previewed different scaling methods for each feature, we scaled the features accordingly. Here are the scalings:
+
+![27](milestone-3-visualizations/27.png)
+
+Now, our features are near 0 (helps distance models like K-Means and SVM).
+
+![28](milestone-3-visualizations/28.png)
+
+## Modeling
+
+### 1. Decision Tree:
+
+We start off with a decision tree; it is interpretable and tests our data viability. We start with an initial maximum depth of 3. We have three classes, so we use One-vs-Rest when making the ROC Curves.
+
+![29](milestone-3-visualizations/29.png)
+
+We can see that our F1 Score is already quite high. We can also see that the feature that results in the greatest information gain when split on is `last_funding_millions`. It seems like funding information and founding information are the features the decision tree uses to determine which cluster a company belongs to. Using hyperparameter tuning, we can push our F1 Score even higher. 
+
+![30](milestone-3-visualizations/30.png)
+
+We can see that with hyperparameter tuning, which uses 5-fold cross validation, our new maximum depth is 10. An F1 Score of 0.941 is excellent for a multiclass classifier, and an AUC near 1 for all the ROC curves shows that this model is well suited to predicting clusters. 
+
+![31](milestone-3-visualizations/31.png)
+
+### 2. Support Vector Machine (SVM):
+
+We follow the same approach with an SVM. By using an SVM, we test if our scaling is sufficient, since SVM is affected by distance, given that it tries to find a hyperplane dividing the data.
+
+Here are the results without any scaling:
+
+![32](milestone-3-visualizations/32.png)
+
+Here are the results with scaling:
+
+![33](milestone-3-visualizations/33.png)
+
+In addition to performing better, the SVM on the scaled data runs much faster. 
+
+With hyperparameter tuning, we can achieve an even greater F1 Score for the SVM on the scaled data.
+
+![34](milestone-3-visualizations/34.png)
+
+## Conclusion
+
+Using a decision tree and support vector machine on our primary dataset to predict which cluster each company belongs to worked well. The tuned decision tree had an F1 Score of 0.941, and the tuned SVM had an F1 Score of 0.930. We also tested the viability of creating models on our datasets and developed a preprocessing pipeline. Finally, we saw firsthand the effect that scaling has on distance-based model accuracy. The next two sections use the companies from our primary dataset that had valuation information. The models created are more applicable for real-world inference, because we drop circular features, such as total funding when trying to make predictions. Instead, we use information that companies without much funding information would have, such as their industry, location, year founded, and latest funding. 
+
+___
+
+# Section 4
+
+**File:** `Michael-ML-Valuation-2Bins.ipynb`
+
+**Goal**: Using classification on `primary-with-valuation.csv`, predict whether a company will be in the lower half or upper half of valuations. 
+
+**Reason**: While the decision tree and SVM for predicting clusters were successful, they are not applicable to inferring company success on unseen, real-world data. This is because they use features that are either unavailable or circular in nature for most companies. For this section, we first divide the valuation amounts into two bins, low and high, and then use realistically obtainable features to predict whether a company will end up with a low or high valuation.
+
+## Preprocessing
+
+The preprocessing for this section follows a similar process to the preprocessing in section 1. The differences occur in the encoding and augmentation of the data.
+
+### 1. Encoding:
+
+We drop features such as total funding and investor count; these are circular when predicting valuation. 
+
+![35](milestone-3-visualizations/35.png)
+
+### 2. Augmenting:
+
+Here is the interesting part. Since we dropped so many features that were used by past models to determine clusters, we need to augment our dataset with new features that give it more information. Our approach to this was to encode the keywords column, which contains industry information for each company, so that the model can use industry area when classifying. 
+
+We start by one-hot encoding all the keywords in each list for each company using Scikit-learn's `MultiLabelBinarizer`. Then we use Scikit-learn's `TfidfTransformer` to reduce the effects of our sparse one-hot encoded matrix. Then, we use `KMeans` to cluster similar points in our one-hot encoded vector space. Finally, we one-hot encode the keyword bins formed by K-Means. 
+
+![36](milestone-3-visualizations/36.png)
+
+With the top 3 most common keywords in each bin, we use `networkx` to create a graph to connect keyword bins to keywords. Using our clustering algorithm, we have created clusters with keywords that are conceptually tangential, ie. Bin 0 has Cybersecurity, Software Development, and Information Technology, while Bin 6 has E-commerce, Retail, and Technology. 
+
+![37](milestone-3-visualizations/37.png)
+![38](milestone-3-visualizations/38.png)
+
+## Modeling
+
+### Random Forest:
+
+We use a random forest model because it avoids overfitting and had the best performance.
+
+![39](milestone-3-visualizations/39.png)
+
+With 100 trees, the F1 Score is decent, and with hyperparameter tuning becomes slightly better.
+
+![40](milestone-3-visualizations/40.png)
+
+## Conclusion
+
+Our random forest model did a good job of deciding whether a company would have low or high valuation based on our modified feature set. Using this model, given an unseen company, we could decide with moderate confidence whether they would end up with a low or high valuation.  
+
+___
+
+# Section 5
+
+**File:** `Michael-ML-Valuation-3Bins.ipynb`
+
+**Goal**: Using classification on `primary-with-valuation.csv`, predict whether a company will have a low, medium, or high valuation.
+
+**Reason**: While the previous section created a model that predicts whether a company will end up with a low or high valuation, it would be even more helpful to predict whether a company will end up with a low, medium, or high valuation. In this section, we create three bins for valuation and train a classifier to predict these bins.
+
+## Preprocessing
+
+The preprocessing for this section is identical to that of the previous section.
+
+## Modeling
+
+### Logistic Regression:
+
+We use a logistic model because it is interpretable, which is useful for determining how our keyword bins influence the model. Here are the bins again:
+
+![41](milestone-3-visualizations/40.png)
+
+Class 0, Class 1, and Class 2 correspond to low, medium, and high valuations. Below, in our tuned logistic regression model, we see that the model is more likely to classify companies in Bin 8 as Class 0 (lower valuation). Bin 8 includes software, technology, and human resources. Compared to other bins, it makes sense that human resources would have lower valuations. Looking at Bin 5, we see that the model is more likely to classify these companies as either Class 0 or Class 2. It is much less likely to classify them as Class 1. In other words, since this bin includes digital health, consumer electronics, and healthtech, the model sees healthcare companies as more likely to either have low or high valuations, with fewer in the middle.  
+
+![42](milestone-3-visualizations/42.png)
+
+## Conclusion
+
+Our random forest model did an okay job of deciding whether a company would have low, medium, or high valuation. Using this model, given an unseen company, we could decide with some confidence whether they would end up having a low, medium, or high valuation. 
+
+___
+
+# Section 6
+
+**File:** `Mel ML Project Models.ipynb `
+
+**Goal**: Use regressions to predict the valuation of a company using data in `primary-with-valuation.csv`.
+
+**Reason**: We used classifiers to predict valuation bins, but we did not yet have a way to predict actual valuation amounts given a feature set. In this section, we use regressors to accomplish this task.
+
+## Preprocessing
+
+Here is an incomplete snippet of the dataset before preprocessing: 
+
+![43](milestone-3-visualizations/43.png)
+
+### Transformation:
+
+As we were plotting regression models, we wanted to focus on the numerical attributes, so we dropped the columns that couldn’t contribute, including the name, keywords, concepts, articles, and website.  
+
+With the remaining columns, we looked at the attribute types to decide if any encoding needed to be done if the columns weren’t float or integer types. The city, valuation date, and sentiment score were object types, so we decided to use target encoding. We chose this over any other type because we assumed that there would be relationships between those attributes and the target feature, valuation in millions.  
+
+Before training our SVR model, we scaled the features for better performance and hypertuned the parameters using GridSearchCV, which printed out the best epsilon and C values. The SVR had a great R-squared score of around 99%, an improvement from before finetuning parameters. The KNN model performed much better without scaled features, so we used the unscaled training and test features. We also set the weights equal to distance because it gives more importance to closer neighbors to make predictions. This also reduces the impact of farther neighbors, or outliers in this case that we did not want to drop. If we had dropped the outliers for the KNN, the R-squared score would have been better, but we would lose what we’re looking for in the data. As more data is collected and trained, this data point may no longer be an outlier and improve the overall predictive power of the model.   
+
+Here is the dataset after preprocessing: 
+
+![44](milestone-3-visualizations/44.png)
+
+## Modeling
+
+### 1. Support Vector Regression (SVR):
+
+We used a support vector regression to predict the valuation in millions of companies. First, we scaled the parameters then hyper-tuned them using GridSearchCV to find the best C and epsilon values. Epsilon defines a margin of tolerance for the model and C determines the trade-off between the bias and variance.
+
+![45](milestone-3-visualizations/45.png)
+
+### 2. K-Nearest Neighbors (KNN) Regression 
+
+We made a plot and used the elbow method to determine the optimal number of clusters for high accuracy. We found the best clusters to be three and obtained decent r-squared values. The reason it is not higher is due to an outlier in the data, but we wanted to keep the outlier to visualize the companies that performed better than expected.
+
+![46](milestone-3-visualizations/46.png)
+
+## Conclusion
+
+Using SVR and KNN regressors, we were able to predict valuations with quite high accuracy. For the SVR regressor, we had an r-squared value of 0.997, which is very high. For the KNN regressor, we had an r-squared value of 0.755, which is moderately high. 
+
+___
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
 
