@@ -1,6 +1,4 @@
-# Models Implemented
-
-## Overview
+# Overview
 
 This page is organized into six sections. The authors of each section are:
 
