@@ -1,10 +1,22 @@
-<h1>Test</h1>
-<p>text test</p>
+# Test
 
-text test 2
+text test 1
 
-<div class="image-container">
-<p>image test</p>
 <img src = "visualizations/profiles.png" style="width: 55vw; min-width: 330px;">
+
+text **test** 2
+
+*test*
+
+> test
+>
+> test 2
+
+test
+
+1. test
+2. test
+
+1. test
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
