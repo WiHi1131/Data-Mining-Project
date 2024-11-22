@@ -2,7 +2,7 @@
 
 text test 1
 
-<img src = "visualizations/profiles.png" style="width: 55vw; min-width: 330px;">
+<img src = "visualizations/profiles.png" style="width: 55vw; min-width: 330px; max-width: 400px">
 
 text **test** 2
 
@@ -21,6 +21,6 @@ _test_
 
 1. test
 
-![<img src="visualizations/profiles.png" width="150"/>](visualizations/profiles.png)
+![Profiles](visualizations/profiles.png)
 
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
