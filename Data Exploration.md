@@ -31,7 +31,7 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 <header>
         <h1>Before Cleaning and Integration: </h1>
     </header>
-<div class="image-container">
+
 <p>profiles.csv</p>
 <img src = "visualizations/profiles.png" style="width: 55vw; min-width: 330px;">
 
@@ -213,6 +213,5 @@ After scraping and cleaning, we had three datasets. While scraping each website,
 </p>
 <img src = "visualizations/willheatmap.png" style="width: 55vw; min-width: 330px;">
 
-</div>
 </main>
 <a href="https://wihi1131.github.io/Data-Mining-Project/">Home</a>
