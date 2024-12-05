@@ -24,7 +24,7 @@ The end goal of this project will be to create versatile models using contempora
 1. What are the characteristics of startups that have a high annual revenue growth? 
 2. What startups in the past couple of years have had the largest revenue growth? 
 3. Can keywords be used to predict startup performance? 
-4. Are certain news websites better indicators of corporate growth than others? (Forbes, US News, …) 
+4. Do certain news websites better indicate growth? (Forbes, US News, etc.) 
 5. What measurements best predict startup success potential? 
 6. How do startups and data science intersect? 
 7. What are the crucial factors for a successful startup?
