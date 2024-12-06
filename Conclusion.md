@@ -21,6 +21,8 @@ For the models with less information, we found that the best indicators of start
 - Last funding month
 - Country
 
+This is clear from the logistic regression which has weights that represent the relative importance of each feature in predicting the outcome. 
+
 ![3](milestone-4-visualizations/3.png)
 
 The bins are shown in the graph below:
